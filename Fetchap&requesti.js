@@ -102,3 +102,12 @@ fetch('https://jsonplaceholder.typicode.com/todos/1',{
   })
 
   //empty response : {}
+/*----------------------------------*/
+//Request in action
+
+var request = require('request');
+request('http://www.yourdomain.com', function (error, response, body) {
+  console.log('error:', error);
+  console.log('statusCode:', response && response.statusCode); 
+  console.log('body:', body);
+});
